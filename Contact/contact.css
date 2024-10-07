@@ -8,6 +8,15 @@ body {
 }
 a {
     text-decoration: none;
+    text-shadow: 3px 3px 5px black;
+    color: rgb(0, 170, 9);
+    font: small-caps bold 0.9em Arial, Helvetica, sans-serif;
+}
+a:visited {
+    color: rgb(0, 87, 4);
+}
+a:hover {
+    background-color: rgb(0, 0, 0, 0.2);
 }
 p {
     text-align: center;
