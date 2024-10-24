@@ -2,9 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*@tailwind base;
-@tailwind components;
-@tailwind utilities;*/
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -371,16 +368,6 @@
   padding: 10px;
   border: 1px solid #ccc; /* kant */
   border-radius: 5px;
-}
-
-button {
-  margin: 0 auto; /* Centrera knappen */
-  display: block; /* Gör knappen till ett blockelement */
-  background-color: #9197ae;
-  color: #eff6ee;
-  padding: 10px 15px; /*Padding inuti knappen*/
-  border-radius: 5px;
-  transition: background-color 0.3s; /* Effekt för bakgrundsfärg */
 }
 
 /* Stilar för kontaktinformationen */
