@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Pärmar & Poesi – En bokhandel i stadens hjärta med ett brett urval av klassiska romaner, poesi och unika samlarobjekt. Upptäck magiska berättelser och filosofiska verk. Vi annordnar ofta olika evenemang som bokcirklar, högläsningar och bokbytarträffar!">
-    <meta name="author" content="Mikael Lindstedt">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Pärmar & Poesi – En bokhandel i stadens hjärta med ett brett urval av klassiska romaner, poesi och unika samlarobjekt. Upptäck magiska berättelser och filosofiska verk. Vi annordnar ofta olika evenemang som bokcirklar, högläsningar och bokbytarträffar!" />
+    <meta name="author" content="Mikael Lindstedt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pärmar & Poesi - Good Grades Are Fun</title>
-    <link rel="stylesheet" href="src/books.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display" rel="stylesheet">
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display"
+      rel="stylesheet" />
+  </head>
+  <body>
     <main class="main-books">
+      <header class="header-dropdown">
+        <article class="navbar" id="navbar">
+          <a class="dropdownclose" href="#!"></a>
+          <ul class="navbar-list">
+            <li><a href="main.html">Start</a></li>
+            <li><a href="evenemang.html">Evenemang</a></li>
+            <li><a href="books.html">Våra böcker</a></li>
+            <li><a href="index.html">Om oss</a></li>
+            <li><a href="index.html">Kontakt</a></li>
+          </ul>
+        </article>
 
-        <header class="header-dropdown">
-            <article class="navbar" id="navbar">
-                <a class="dropdownclose" href="#!"></a>
-                <ul class="navbar-list">
-                    <li><a href=".index.html">Start</a></li>
-                    <li><a href="evenemang.html">Evenemang</a></li>
-                    <li><a href="books.html">Våra böcker</a></li>
-                    <li><a href="index.html">Om oss</a></li>
-                    <li><a href="index.html">Kontakt</a></li>
-                </ul>
-            </article>
-        
-            <img class="logo" src="src/logo.png" alt="">
-            <h1 class="header-title">Pärmar<br>&<br>Poesi</h1>
-            <a class="dropdown" href="#navbar"></a>
-        </header>
+        <img class="logo" src="src/logo.png" alt="" />
+        <h1 class="header-title">Pärmar<br />&<br />Poesi</h1>
+        <a class="dropdown" href="#navbar"></a>
+      </header>
 
-        <section class="section-books">
+      <section class="section-books">
+        <article class="article-books">
+          <h1 class="h1-books">
+            <a href="book-2.html">Good Grades Are Fun</a>
+          </h1>
+          <h2 class="h2-books">Chris Palzis</h2>
+          <p class="p-books">
+            <img
+              src="https://m.media-amazon.com/images/I/718flx6KG8L._AC_UF1000,1000_QL80_.jpg"
+              alt="Veckans bok" />Good Grades Are Fun is a children's book where
+            Good Grade Greg used to be a poor student. In fact he was so bad he
+            would goof off in class and daydream while the teacher was trying to
+            teach. Eventually these poor manners catch up to Greg when his
+            parents receive his first report card and end up grounding him. Greg
+            is reduced to tears because he doesn't know how to bail himself out
+            when Jason comes to his rescue. Jason teaches Greg the fundamental
+            manner of getting good grades by sitting in the front of the class
+            and paying attention, to raising his hand when he doesn't understand
+            and making flashcards. Greg eventually becomes the best student in
+            his class and his parents reward him by throwing a pizza party for
+            him and his friends.
+          </p>
+        </article>
+      </section>
 
-            <article class="article-books">
-                <h1 class="h1-books"><a href="book-2.html">Good Grades Are Fun</a></h1>
-                <h2 class="h2-books">Chris Palzis</h2>
-                <p class="p-books"><img src="https://m.media-amazon.com/images/I/718flx6KG8L._AC_UF1000,1000_QL80_.jpg" alt="Veckans bok">Good Grades Are Fun is a children's book where Good Grade Greg used to be a poor student. In fact he was so bad he would goof off in class and daydream while the teacher was trying to teach. Eventually these poor manners catch up to Greg when his parents receive his first report card and end up grounding him. Greg is reduced to tears because he doesn't know how to bail himself out when Jason comes to his rescue. Jason teaches Greg the fundamental manner of getting good grades by sitting in the front of the class and paying attention, to raising his hand when he doesn't understand and making flashcards. Greg eventually becomes the best student in his class and his parents reward him by throwing a pizza party for him and his friends.</p>
-            </article>
-
-        </section>
-        
-        <footer class="bg-[#273043] text-white text-center p-4 w-full">
-            <p class="footer-text">© 2024 Mikael Lindstedt KYH-FE24.</p>
-        </footer>
-
+      <footer class="bg-[#273043] text-white text-center p-4 w-full">
+        <p class="footer-text">© 2024 Mikael Lindstedt KYH-FE24.</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>

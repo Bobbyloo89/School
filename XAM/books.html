@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Pärmar & Poesi – En bokhandel i stadens hjärta med ett brett urval av klassiska romaner, poesi och unika samlarobjekt. Upptäck magiska berättelser och filosofiska verk. Vi annordnar ofta olika evenemang som bokcirklar, högläsningar och bokbytarträffar!">
-    <meta name="author" content="Mikael Lindstedt">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Pärmar & Poesi – En bokhandel i stadens hjärta med ett brett urval av klassiska romaner, poesi och unika samlarobjekt. Upptäck magiska berättelser och filosofiska verk. Vi annordnar ofta olika evenemang som bokcirklar, högläsningar och bokbytarträffar!" />
+    <meta name="author" content="Mikael Lindstedt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pärmar & Poesi - Våra Böcker</title>
-    <link rel="stylesheet" href="src/books.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display" rel="stylesheet">
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display"
+      rel="stylesheet" />
+  </head>
+  <body class="bodybooks">
     <main class="main-books">
+      <header class="header-dropdown">
+        <article class="navbar" id="navbar">
+          <a class="dropdownclose" href="#!"></a>
+          <ul class="navbar-list">
+            <li><a href="main.html">Start</a></li>
+            <li><a href="evenemang.html">Evenemang</a></li>
+            <li><a href="books.html">Våra böcker</a></li>
+            <li><a href="index.html">Om oss</a></li>
+            <li><a href="index.html">Kontakt</a></li>
+          </ul>
+        </article>
 
-        <header class="header-dropdown">
-            <article class="navbar" id="navbar">
-                <a class="dropdownclose" href="#!"></a>
-                <ul class="navbar-list">
-                    <li><a href=".index.html">Start</a></li>
-                    <li><a href="evenemang.html">Evenemang</a></li>
-                    <li><a href="books.html">Våra böcker</a></li>
-                    <li><a href="index.html">Om oss</a></li>
-                    <li><a href="index.html">Kontakt</a></li>
-                </ul>
-            </article>
-        
-            <img class="logo" src="src/logo.png" alt="">
-            <h1 class="header-title">Pärmar<br>&<br>Poesi</h1>
-            <a class="dropdown" href="#navbar"></a>
-        </header>
+        <img class="logo" src="src/logo.png" alt="" />
+        <h1 class="header-title">Pärmar<br />&<br />Poesi</h1>
+        <a class="dropdown" href="#navbar"></a>
+      </header>
 
-        <section class="section-books">
+      <section class="section-books">
+        <article class="bookoftheweek">
+          <h1
+            class="p-4 text-center text-3xl uppercase bg-gradient-to-r from-blue-900 via-red-700 to-pink-600">
+            <a href="bookoftheweek.html">Veckans Bok</a>
+          </h1>
+          <h1 class="h1-books"><a href="book-4.html">It</a></h1>
+          <h2 class="h2-books">Stephen King</h2>
+          <p class="p-books">
+            <img
+              src="https://m.media-amazon.com/images/I/71ZIovNjw+L._AC_UF1000,1000_QL80_.jpg"
+              alt="Veckans bok" />"Can an entire city be haunted? The Losers'
+            Club of 1958 seems to think so. After all, when they were teenagers
+            back then, these seven friends who called the small New England
+            metropolis of Derry their home had first-hand experience with what
+            made this place so horribly different. Every twenty-seven years,
+            something that has existed here for a very long time comes back to
+            terrorize Derry, lurking in the city storm drains and sewers, taking
+            the shape of every nightmare and deepest dread. And yet, time passed
+            and the children grew up, moved away ... the horror of what they all
+            experienced buried deep, wrapped in forgetfulness. Now nearly thirty
+            years later, they're all being called back to Derry for a final
+            life-or-death confrontation with a primordial evil that stirs and
+            coils in the sullen depths of their memories. For the Losers' Club
+            and the thing known only as "It" have some unfinished business with
+            each other ..."
+          </p>
+          <h1
+            class="p-4 text-center text-3xl uppercase bg-gradient-to-r from-blue-900 via-red-700 to-pink-600">
+            <a href="books.html">Våra Böcker</a>
+          </h1>
+        </article>
 
-            <article class="bookoftheweek">
-                <h1 class="p-4 text-center text-3xl uppercase bg-gradient-to-r from-blue-900 via-red-700 to-pink-600"><a href="bookoftheweek.html">Veckans Bok</a></h1>
-                <h1 class="h1-books"><a href="book-4.html">It</a></h1>
-                <h2 class="h2-books">Stephen King</h2>
-                <p class="p-books"><img src="https://m.media-amazon.com/images/I/71ZIovNjw+L._AC_UF1000,1000_QL80_.jpg" alt="Veckans bok">"Can an entire city be haunted? The Losers' Club of 1958 seems to think so. After all, when they were teenagers back then, these seven friends who called the small New England metropolis of Derry their home had first-hand experience with what made this place so horribly different. Every twenty-seven years, something that has existed here for a very long time comes back to terrorize Derry, lurking in the city storm drains and sewers, taking the shape of every nightmare and deepest dread. And yet, time passed and the children grew up, moved away ... the horror of what they all experienced buried deep, wrapped in forgetfulness. Now nearly thirty years later, they're all being called back to Derry for a final life-or-death confrontation with a primordial evil that stirs and coils in the sullen depths of their memories. For the Losers' Club and the thing known only as "It" have some unfinished business with each other ..."</p>
-                <h1 class="p-4 text-center text-3xl uppercase bg-gradient-to-r from-blue-900 via-red-700 to-pink-600"><a href="books.html">Våra Böcker</a></h1>
-            </article>
+        <nav>
+          <p>
+            Sortera efter: <a href="#!">Titel</a> |
+            <a href="#!">Författare</a> |
+            <input type="text" placeholder=" Sök titel eller författare" />
+          </p>
+        </nav>
 
-            <nav>
-                <p>Sortera efter: <a href="#!">Titel</a>   |   <a href="#!">Författare</a>   |   <input type="text" placeholder=" Sök titel eller författare"></p>
-            </nav>
+        <article class="article-books">
+          <h1 class="h1-books"><a href="book-1.html">Rachel</a></h1>
+          <h2 class="h2-books">Nina H. Kennard</h2>
+          <p class="p-books">
+            <img
+              src="https://m.media-amazon.com/images/I/61Zx1OfA9HL._AC_UF1000,1000_QL80_.jpg"
+              alt="Veckans bok" />This historic book may have numerous typos and
+            missing text. Purchasers can download a free scanned copy of the
+            original book (without typos) from the publisher. Not indexed. Not
+            illustrated.1885 Excerpt: ... 141 CHAPTER XIV. "LA MARSEILLAISE."
+            The manner in which Rachel sang, or rather chanted, the
+            "Marseillaise," was, perhaps, a greater manifestation of her
+            unprompted natural genius than any other part she essayed during her
+            brilliant career. After the Revolution of February 1848, and the
+            flight of royalty, mob law ruled unchecked. Every place of amusement
+            was deserted; all excitement and interest concentrated on what was
+            passing in the streets, where the people, wild with joy, set up
+            trees of liberty, and shouted the "Marseillaise/' The idea of
+            singing the national hymn first occurre...
+          </p>
+        </article>
 
-            <article class="article-books">
-                <h1 class="h1-books"><a href="book-1.html">Rachel</a></h1>
-                <h2 class="h2-books">Nina H. Kennard</h2>
-                <p class="p-books"><img src="https://m.media-amazon.com/images/I/61Zx1OfA9HL._AC_UF1000,1000_QL80_.jpg" alt="Veckans bok">This historic book may have numerous typos and missing text. Purchasers can download a free scanned copy of the original book (without typos) from the publisher. Not indexed. Not illustrated.1885 Excerpt: ... 141 CHAPTER XIV. "LA MARSEILLAISE." The manner in which Rachel sang, or rather chanted, the "Marseillaise," was, perhaps, a greater manifestation of her unprompted natural genius than any other part she essayed during her brilliant career. After the Revolution of February 1848, and the flight of royalty, mob law ruled unchecked. Every place of amusement was deserted; all excitement and interest concentrated on what was passing in the streets, where the people, wild with joy, set up trees of liberty, and shouted the "Marseillaise/' The idea of singing the national hymn first occurre...</p>
-            </article>
+        <article class="article-books">
+          <h1 class="h1-books">
+            <a href="book-2.html">Good Grades Are Fun</a>
+          </h1>
+          <h2 class="h2-books">Chris Palzis</h2>
+          <p class="p-books">
+            <img
+              src="https://m.media-amazon.com/images/I/718flx6KG8L._AC_UF1000,1000_QL80_.jpg"
+              alt="Veckans bok" />Good Grades Are Fun is a children's book where
+            Good Grade Greg used to be a poor student. In fact he was so bad he
+            would goof off in class and daydream while the teacher was trying to
+            teach. Eventually these poor manners catch up to Greg when his
+            parents receive his first report card and end up grounding him. Greg
+            is reduced to tears because he doesn't know how to bail himself out
+            when Jason comes to his rescue. Jason teaches Greg the fundamental
+            manner of getting good grades by sitting in the front of the class
+            and paying attention, to raising his hand when he doesn't understand
+            and making flashcards. Greg eventually becomes the best student in
+            his class and his parents reward him by throwing a pizza party for
+            him and his friends.
+          </p>
+        </article>
 
-            <article class="article-books">
-                <h1 class="h1-books"><a href="book-2.html">Good Grades Are Fun</a></h1>
-                <h2 class="h2-books">Chris Palzis</h2>
-                <p class="p-books"><img src="https://m.media-amazon.com/images/I/718flx6KG8L._AC_UF1000,1000_QL80_.jpg" alt="Veckans bok">Good Grades Are Fun is a children's book where Good Grade Greg used to be a poor student. In fact he was so bad he would goof off in class and daydream while the teacher was trying to teach. Eventually these poor manners catch up to Greg when his parents receive his first report card and end up grounding him. Greg is reduced to tears because he doesn't know how to bail himself out when Jason comes to his rescue. Jason teaches Greg the fundamental manner of getting good grades by sitting in the front of the class and paying attention, to raising his hand when he doesn't understand and making flashcards. Greg eventually becomes the best student in his class and his parents reward him by throwing a pizza party for him and his friends.</p>
-            </article>
+        <article class="article-books">
+          <h1 class="h1-books">
+            <a href="book-3.html">Secrets of Subliminal Messaging</a>
+          </h1>
+          <h2 class="h2-books">Martell H</h2>
+          <p class="p-books">
+            <img
+              src="https://m.media-amazon.com/images/I/61ZjCKCH2zL._AC_UF1000,1000_QL80_.jpg"
+              alt="Veckans bok" />This book "Secrets Of Subliminal Messaging"
+            reveals the truth behind the numbers and what effects the numbers
+            have on humanity. This book will reveal the truth behind everything
+            you know today from tv shows to how you act or operate on a daily
+            basis. I created this book for it to be a map or a guide to succeed
+            on this earth some people call home, and others all a simulation.
+          </p>
+        </article>
+      </section>
 
-            <article class="article-books">
-                <h1 class="h1-books"><a href="book-3.html">Secrets of Subliminal Messaging</a></h1>
-                <h2 class="h2-books">Martell H</h2>
-                <p class="p-books"><img src="https://m.media-amazon.com/images/I/61ZjCKCH2zL._AC_UF1000,1000_QL80_.jpg" alt="Veckans bok">This book "Secrets Of Subliminal Messaging" reveals the truth behind the numbers and what effects the numbers have on humanity. This book will reveal the truth behind everything you know today from tv shows to how you act or operate on a daily basis. I created this book for it to be a map or a guide to succeed on this earth some people call home, and others all a simulation.</p>
-            </article>
-
-        </section>
-        
-        <footer class="bg-[#273043] text-white text-center p-4 w-full">
-            <p class="footer-text">© 2024 Mikael Lindstedt KYH-FE24.</p>
-        </footer>
-
+      <!-- <footer class="bg-[#273043] text-white text-center p-4 w-full">
+        <p class="footer-text">© 2024 Mikael Lindstedt KYH-FE24.</p>
+      </footer> -->
     </main>
-</body>
+    <footer class="bg-[#273043] text-white text-center p-4 w-full">
+      <p class="footer-text">© 2024 Mikael Lindstedt KYH-FE24.</p>
+    </footer>
+  </body>
 </html>

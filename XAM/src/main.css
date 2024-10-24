@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+.evenemang {
+  background-color: #eff6ee;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.evenemang h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 75px;
+}
+.evenemang h2 {
+  font-size: 40px;
+}
+.evenemang h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-dropdown {
+  background-color: #273043;
+  width: 100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+}
+.header-dropdown .logo {
+  height: 100%;
+  float: inline-start;
+  aspect-ratio: 1/1;
+}
+.header-dropdown .header-title {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  color: #f02d3a;
+  margin-left: 5%;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.header-dropdown .navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background: #273043;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.header-dropdown .navbar .navbar-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-dropdown .navbar .navbar-list li {
+  max-height: 10vh;
+}
+.header-dropdown .navbar .navbar-list li a {
+  display: block;
+  color: #eff6ee;
+  font-size: 1.5rem;
+  width: 70vw;
+  max-height: 10vh;
+  padding-left: 5vw;
+  background-color: #dd0426;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header-dropdown .navbar:target {
+  transform: translateY(0);
+}
+
+.dropdown:link {
+  width: 20vw;
+  height: 100%;
+  background-image: url(Hamburgare.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  float: inline-end;
+}
+
+.dropdownclose:link {
+  width: 20vw;
+  height: 15vh;
+  background-image: url(HamburgareStäng.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  position: fixed;
+  top: 0;
+  right: 18px;
+}
+
+.beskrivning {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.schema {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.flex-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #eff6ee;
+}
+
+.h1-evenemang {
+  width: 100%;
+}
+
+.flex-item {
+  background-color: #9197ae;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  border-top: 30px solid #273043;
+  border-bottom: 10px solid #273043;
+  box-shadow: 0 2px 10px #273043 0, 0, 0, 0.1;
+  border-radius: 5%;
+}
+
+/* Standard */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  min-height: 100%;
+  background-color: #eff6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #273043;
+  width: 100%;
+}
+.contact h1,
+.contact h2,
+.contact h3 {
+  font-family: "Playfair Display", serif;
+  color: #273043;
+}
+.contact h1 {
+  font-size: 36px;
+}
+.contact h2 {
+  font-size: 30px;
+}
+.contact h3 {
+  font-size: 24px;
+}
+
+.header-dropdown {
+  background-color: #273043;
+  width: 100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+}
+.header-dropdown .logo {
+  height: 100%;
+  float: inline-start;
+  aspect-ratio: 1/1;
+}
+.header-dropdown .header-title {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  color: #f02d3a;
+  margin-left: 5%;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.header-dropdown .navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background: #273043;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.header-dropdown .navbar .navbar-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-dropdown .navbar .navbar-list li {
+  max-height: 10vh;
+}
+.header-dropdown .navbar .navbar-list li a {
+  display: block;
+  color: #eff6ee;
+  font-size: 1.5rem;
+  width: 70vw;
+  max-height: 10vh;
+  padding-left: 5vw;
+  background-color: #dd0426;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header-dropdown .navbar:target {
+  transform: translateY(0);
+}
+
+.dropdown:link {
+  width: 20vw;
+  height: 100%;
+  background-image: url(Hamburgare.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  float: inline-end;
+}
+
+.dropdownclose:link {
+  width: 20vw;
+  height: 15vh;
+  background-image: url(HamburgareStäng.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  position: fixed;
+  top: 0;
+  right: 18px;
+}
+
+/* Sektion om bokhandelns historia */
+.history-section {
+  width: 85%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Jämnt fördela sektionerna */
+  align-items: center;
+}
+
+.history-text {
+  flex: 2; /* Gör textdelen bredare */
+  max-width: 60%; /* Maxbredd för texten */
+}
+
+.history-image {
+  flex: 1; /* Bilden får en mindre del */
+  max-width: 300px;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Team-sektion */
+.team-section {
+  text-align: center;
+  width: 85%; /* Full bredd */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap; /* Låter de brytas till nästa rad */
+  justify-content: center;
+  gap: 20px; /* Utrymme mellan bilderna */
+}
+
+.team-member {
+  flex: 1;
+  max-width: 300px; /* Maxbredd för varje bild */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Skugga*/
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 20%;
+  margin-bottom: 15px;
+}
+
+/* Kontaktsektion */
+.contact-section {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap; /* Elementen bryts till nästa rad om behov */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skugga */
+}
+
+/* Kontaktformulär */
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px; /* Minimera bredd för att undvika för smala sektioner */
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px; /* Marginal mellan fälten */
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* kant */
+  border-radius: 5px;
+}
+
+button {
+  margin: 0 auto; /* Centrera knappen */
+  display: block; /* Gör knappen till ett blockelement */
+  background-color: #9197ae;
+  color: #eff6ee;
+  padding: 10px 15px; /*Padding inuti knappen*/
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Effekt för bakgrundsfärg */
+}
+
+/* Stilar för kontaktinformationen */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.address {
+  margin-bottom: 20px; /* Marginal under adressen */
+}
+
+.map iframe {
+  width: 100%; /* Full bredd för kartan */
+  border: 0;
+}
+
+/* För mobila enheter med maxbredd 768px */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  /* Ändra layouten för .history-section till column */
+  .history-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .history-text {
+    max-width: 100%;
+  }
+  .history-image {
+    max-width: 100%; /* Justera bildstorleken */
+    margin-top: 20px; /* Marginal ovanför bilden */
+  }
+  /* Ändra layouten för team-sektionen - column */
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-member {
+    max-width: 100%; /* varje bild tar upp hela bredden */
+  }
+  /* Kontaktformulär och kontaktinformation - column */
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+  .map iframe {
+    height: 300px; /* Justera höjden på kartan för mobila enheter */
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-dropdown {
+  background-color: #273043;
+  width: 100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+}
+.header-dropdown .logo {
+  height: 100%;
+  float: inline-start;
+  aspect-ratio: 1/1;
+}
+.header-dropdown .header-title {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  color: #f02d3a;
+  margin-left: 5%;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.header-dropdown .navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background: #273043;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.header-dropdown .navbar .navbar-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-dropdown .navbar .navbar-list li {
+  max-height: 10vh;
+}
+.header-dropdown .navbar .navbar-list li a {
+  display: block;
+  color: #eff6ee;
+  font-size: 1.5rem;
+  width: 70vw;
+  max-height: 10vh;
+  padding-left: 5vw;
+  background-color: #dd0426;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header-dropdown .navbar:target {
+  transform: translateY(0);
+}
+
+.dropdown:link {
+  width: 20vw;
+  height: 100%;
+  background-image: url(Hamburgare.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  float: inline-end;
+}
+
+.dropdownclose:link {
+  width: 20vw;
+  height: 15vh;
+  background-image: url(HamburgareStäng.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  position: fixed;
+  top: 0;
+  right: 18px;
+}
+
+.master-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.master-flex .flexcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.master-flex .flexcontainer .main-box1 {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 50%;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.master-flex .flexcontainer .main-box1 .button-1 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #f02d3a;
+  color: #273043;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.master-flex .flexcontainer .main-box1 .button-1:hover {
+  background-color: #9197ae;
+}
+.master-flex .flexcontainer .main-box1 .scroll-box2 {
+  background-color: #273043;
+  border-color: black;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: blue;
+  border-radius: 15px;
+  scroll-margin-block-start: 5px;
+}
+.master-flex .flexcontainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.master-flex .flexcontainer2 .main-box2 {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 600px;
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+.master-flex .flexcontainer2 .main-box2 .scroll-box2 {
+  background-color: #273043;
+  border-color: black;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  border-radius: 15px;
+  scroll-margin-block-start: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-box1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .main-box1 {
+    font-size: 18px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodybooks {
+  max-width: 100vw;
+  background-color: #eff6ee;
+}
+
+.main-books {
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.section-books {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 90%;
+  min-height: 68%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.section-books article {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 2%;
+  border-bottom: 2px solid #dd0426;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.section-books article h1 a:hover {
+  text-decoration: underline;
+}
+.section-books article p {
+  align-self: flex-start;
+}
+.section-books article p img {
+  max-height: 350px;
+  max-width: 40%;
+  float: right;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-books .bookoftheweek {
+  margin-bottom: 0;
+}
+.section-books nav {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  padding: 2%;
+  border-bottom: 2px solid #dd0426;
+  width: 90%;
+  background-color: #9197ae;
+}
+.section-books nav p a:link {
+  text-decoration: underline;
+}
+.section-books nav p a:hover {
+  text-decoration: none;
+}
+.section-books nav input[type=text] {
+  max-width: 90%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.h1-books {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.h2-books {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.p-books {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.header-dropdown {
+  background-color: #273043;
+  width: 100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+}
+.header-dropdown .logo {
+  height: 100%;
+  float: inline-start;
+  aspect-ratio: 1/1;
+}
+.header-dropdown .header-title {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  color: #f02d3a;
+  margin-left: 5%;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.header-dropdown .navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background: #273043;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+.header-dropdown .navbar .navbar-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-dropdown .navbar .navbar-list li {
+  max-height: 10vh;
+}
+.header-dropdown .navbar .navbar-list li a {
+  display: block;
+  color: #eff6ee;
+  font-size: 1.5rem;
+  width: 70vw;
+  max-height: 10vh;
+  padding-left: 5vw;
+  background-color: #dd0426;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header-dropdown .navbar:target {
+  transform: translateY(0);
+}
+
+.dropdown:link {
+  width: 20vw;
+  height: 100%;
+  background-image: url(Hamburgare.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  float: inline-end;
+}
+
+.dropdownclose:link {
+  width: 20vw;
+  height: 15vh;
+  background-image: url(HamburgareStäng.png);
+  background-size: 100% 100%;
+  background-color: #dd0426;
+  position: fixed;
+  top: 0;
+  right: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */

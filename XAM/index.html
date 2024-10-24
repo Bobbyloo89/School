@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Extra metataggar-->
+    <meta
+      name="description"
+      content="Pärmar & Poesi – Om oss - Kontakt - En bokhandel i stadens hjärta med ett brett urval av klassiska romaner, poesi och unika samlarobjekt. Upptäck magiska berättelser och filosofiska verk. Vi annordnar ofta olika evenemang som bokcirklar, högläsningar och bokbytarträffar" />
+    <meta
+      name="keywords"
+      content="bokhandel, poesi, romaner, samlarobjekt, fantasy, klassiker, filosofi, Dostojevskij, Tolstoj, Neil Gaiman, Ursula K. Le Guin" />
+    <meta name="author" content="Julia Rasmusson" />
+
+    <title>
+      Pärmar & Poesi – En bokhandel för bokälskare och poesiromantiker
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./src/style.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="src/main.css" />
+  </head>
+  <body class="contact">
+    <!-- Samma på hela hemsidan -->
+    <header class="header-dropdown">
+      <article class="navbar" id="navbar">
+        <a class="dropdownclose" href="#!"></a>
+        <ul class="navbar-list">
+          <li><a href="main.html">Start</a></li>
+          <li><a href="evenemang.html">Evenemang</a></li>
+          <li><a href="books.html">Våra böcker</a></li>
+          <li><a href="index.html">Om oss</a></li>
+          <li><a href="index.html">Kontakt</a></li>
+        </ul>
+      </article>
+
+      <img class="logo" src="src/logo.png" alt="" />
+      <h1 class="header-title">Pärmar<br />&<br />Poesi</h1>
+      <a class="dropdown" href="#navbar"></a>
+    </header>
+    <!-- Sektion om bokhandelns historia -->
+    <section class="history-section">
+      <article class="history-text">
+        <h2>Historien bakom Pärmar & Poesi</h2>
+        <p>
+          –
+          <i
+            >en oas för bokälskare och poesiromantiker mitt i stadens hjärta. </i
+          ><br />Sedan vi öppnade våra dörrar har vi varit en plats där ord och
+          berättelser får leva, där varje bok inte bara är ett objekt, utan en
+          upplevelse som väntar på att upptäckas. Här hittar du allt från
+          klassiska romaner till samtida poesi, unika utgåvor och handplockade
+          samlarobjekt. Vi värnar om den personliga bokhandelsupplevelsen, där
+          varje titel noggrant väljs ut för att skapa en samling som inspirerar,
+          utmanar och väcker nyfikenhet.
+        </p>
+      </article>
+      <figure class="history-image">
+        <img
+          src="/images/bokhandel.webp"
+          alt="Bokhandeln Pärmar & Poesi, etablerad 1950" />
+        <figcaption><i>Bokhandeln, etablerad 1950</i></figcaption>
+      </figure>
+    </section>
+    <!-- Sektion om teamet -->
+    <section class="team-section">
+      <h2>Vi som jobbar här</h2>
+      <div class="team-container">
+        <article class="team-member">
+          <img
+            src="images/rachel.webp"
+            alt="Bild på Rachel, ägare av bokhandeln Pärmar & Poesi"
+            class="profile-pic" />
+          <h3>Rachel</h3>
+          <br />
+          <p>
+            Ägare till bokhandeln och har en förkärlek för magiska berättelser
+            och fantasyromaner. Mina favoriter inkluderar författare som Neil
+            Gaiman och Ursula K. Le Guin. <br />
+          </p>
+        </article>
+        <article class="team-member">
+          <img
+            src="images/richter.webp"
+            alt="Bild på Richter, bokhandlare på Pärmar & Poesi"
+            class="profile-pic" />
+          <h3>Richter</h3>
+          <br />
+          <p>
+            Bokhandlaren som föredrar klassiker och filosofi. Uppskattar djupa,
+            tankeväckande verk och har en särskild plats i hjärtat för rysk
+            litteratur, som verk av Dostojevskij och Tolstoj
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Tailwind -->
+    <div class="bg-[#eff6ee] p-6 rounded-lg shadow-lg max-w-md text-center">
+      <h1 class="text-2xl font-bold text-black-600 mb-4">
+        In the Realm of Styles
+      </h1>
+      <p class="text-base text-gray-700">
+        "In the realm of styles, two artists play their part:<br />
+        Tailwind, a weaver of utility’s art,<br />
+        Crafting swift designs with a nimble hand,<br />
+        While SASS, the poet, with variables grand,<br />
+        Bends CSS to dreams, modular and bright,<br />
+      </p>
+
+      <p class="text-base text-gray-700 italic">
+        Together they dance, bringing visions to light."
+      </p>
+    </div>
+    <!-- Sektion för kontakt -->
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2>Kontakta oss</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="question">Fråga</label>
+            <textarea id="question" name="question" required></textarea>
+          </div>
+          <button type="submit">Skicka</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="address">
+          <h2>Hitta till oss</h2>
+          <p>Bokhandlargatan 1, 123 45 WOOD</p>
+        </div>
+        <div class="map">
+          <h3>Karta</h3>
+          <img
+            src="images/karta.png"
+            alt="Karta över platsen för Pärmar & Poesi bokhandel"
+            width="300"
+            height="200"
+            style="border: 0; max-width: 100%; height: auto" />
+        </div>
+      </div>
+    </section>
+    <!-- Med Tailwind -->
+    <footer class="bg-[#273043] text-white text-center p-4 w-full">
+      <p class="footer-text">© 2024 Julia Rasmusson KYH-FE24</p>
+    </footer>
+  </body>
+</html>
