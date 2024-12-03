@@ -184,6 +184,11 @@ fetchApiKey().then(apiKey => {
                         infoBoxContent.appendChild(infoMoonsBox); // Lägger till container för månar till infoBoxContent
 
                         // Skapar knapp för att stänga fönster med planetinfo
+                        const closeButtonBox = document.createElement('div'); // Nytt element, container för STÄNG-knapp (för lättare design)
+                        closeButtonBox.classList.add('closeButtonBox'); // Tilldelar container en class för CSS-styling
+                        const infoBoxContentBox = document.createElement('div'); // Nytt element, container för STÄNG-knapp och infoBoxContent (för lättare design)
+                        infoBoxContentBox.classList.add('infoBoxContentBox'); // Tilldelar container en class för CSS-styling
+                        infoBox.appendChild(infoBoxContentBox); // Lägger till container till inforuta
                         const closeButton = document.createElement('button'); // Nytt element, knapp
                         closeButton.textContent = ' X ';
                         closeButton.id = 'closeButton'; // Tilldelar knapp ett ID
@@ -192,9 +197,10 @@ fetchApiKey().then(apiKey => {
                             infoBox.innerHTML = ''; // Tar bort data i infoBox när knappen klickas
                             infoBox.style.display = 'none'; // Stänger (döljer) infoBox när knappen klickas
                         });
-                        infoBoxContent.appendChild(closeButton); // Lägger till "Stäng"-knapp till infoBoxContent
+                        closeButtonBox.appendChild(closeButton); // Lägger till "Stäng"-knapp till infoBoxContent
 
-                        infoBox.appendChild(infoBoxContent); // Lägger till infoBoxContent till infoBox
+                        infoBoxContentBox.appendChild(infoBoxContent); // Lägger till infoBoxContent till infoBox
+                        infoBoxContentBox.appendChild(closeButtonBox); // Lägger till container för STÄNG-knapp till infoBoxContentBox
                         infoBox.style.display = 'flex'; // Öppnar infoBox (gör synlig) för att visa planetinfo
                     } else {
                         // Visar felmeddelande om planeten inte hittas (felaktig input i inputfältet)
