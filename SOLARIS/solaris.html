@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solsystemet - Solaris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="solaris.css">
+    <script src="solaris.js" defer></script>
+</head>
+<body>
+
+    <header><h1 class="headerTitle">SOLARIS</h1></header> <!-- Header med sidans titel -->
+
+    <section class="solsystem"> <!-- Solsystemet i sidans mitt, med planeter i omloppsbana runt solen -->
+
+        <article class="sol"></article>
+        <article class="planet mercury"></article>
+        <article class="planet venus"></article>
+        <article class="planet earth"></article>
+        <article class="planet mars"></article>
+        <article class="planet jupiter"></article>
+        <article class="planet saturn"><div class="saturnRing"></div></article>
+        <article class="planet uranus"></article>
+        <article class="planet neptune"></article>
+
+    </section>
+
+    <section class="planetsRow" id="planetsRow"> <!-- Planetraden under solsystemet med klickbara planeter -->
+
+        <article class="mercuryRow planetRow" data-name="merkurius"></article>
+        <article class="venusRow planetRow" data-name="venus"></article>
+        <article class="earthRow planetRow" data-name="jorden"></article>
+        <article class="marsRow planetRow" data-name="mars"></article>
+        <article class="jupiterRow planetRow" data-name="jupiter"></article>
+        <article class="saturnRow planetRow" data-name="saturnus"><div class="saturnRing"></div></article>
+        <article class="uranusRow planetRow" data-name="uranus"></article>
+        <article class="neptuneRow planetRow" data-name="neptunus"></article>
+
+    </section>
+
+    <br>
+
+    <footer> <!-- Footer med inputfält, SÖK-knapp och infoBox (dold tills sökning gjorts) -->
+        <input type="text" class="planetInput" id="planetInput" placeholder="Namn på planet..." autocomplete="off">
+        <br>
+        <button class="searchButton" id="searchButton">SÖK</button>
+        <article class="infoBox" id="infoBox"></div>
+    </footer>
+
+</body>
+</html>
