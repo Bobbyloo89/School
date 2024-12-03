@@ -48,6 +48,7 @@ footer {
     text-align: center;
     width: 50vw;
     height: 5vh;
+    font-size: 1rem;
 }
 /* Styling för placeholder-text i inputfältet */
 input::placeholder {
