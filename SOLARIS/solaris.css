@@ -15,15 +15,15 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100svh;
+    width: 100svw;
 }
 /* Styling för header */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 15svh;
 }
 /* Styling för sidtitel - SOLARIS */
 .headerTitle {
@@ -37,7 +37,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 20vh;
+    height: 20svh;
 }
 /* Styling för inputfältet*/
 .planetInput {
@@ -46,9 +46,10 @@ footer {
     background-color: black;
     color:rgba(0, 174, 255);
     text-align: center;
-    width: 50vw;
-    height: 5vh;
+    width: 50svw;
+    height: 5svh;
     font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 174, 255);
 }
 /* Styling för placeholder-text i inputfältet */
 input::placeholder {
@@ -67,16 +68,16 @@ input:focus {
     border-radius: 1em;
     background-color: rgb(0, 174, 255, 0.7);
     font-size: 1.3rem;
-    width: 25vw;
-    height: 6vh;
+    width: 25svw;
+    height: 6svh;
     cursor: pointer;
 }
 /* Styling för planetraden */
 .planetsRow {
-    width: 90vw;
-    height: 15vh;
-    max-width: 90vw;
-    max-height: 15vh;
+    width: 90svw;
+    height: 15svh;
+    max-width: 90svw;
+    max-height: 15svh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,10 +86,10 @@ input:focus {
 /* Styling för solsystemet med solen som centrum och planeter i omlopp */
 .solsystem {
     position: relative;
-    width: 50vmin;
-    height: 50vmin;
-    max-width: 50vw;
-    max-height: 50vh;
+    width: 50svmin;
+    height: 50svmin;
+    max-width: 50svw;
+    max-height: 50svh;
     border: 1px solid rgba(0, 174, 255, 0.25);
     border-radius: 50%;
     display: flex;
@@ -105,7 +106,7 @@ input:focus {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: #fdff6e;
-    box-shadow: 0 0 2vw #b8ffea, 0 0 4vw #7ffff4 inset; /* Glow-effect */
+    box-shadow: 0 0 2svw #b8ffea, 0 0 4svw #7ffff4 inset; /* Glow-effect */
 }
 /* Styling för att göra alla planeter i planetraden och solsystemet runda */
 .planet, .planetRow {
@@ -117,20 +118,23 @@ input:focus {
     top: 50%;
     left: 50%;
     transform-origin: center;
-    box-shadow: 0 0 0.3vh #000000 inset; /* Inset skugga för att se rundare ut */
+    box-shadow: 0 0 0.3svh #000000 inset; /* Inset skugga för att se rundare ut */
 }
 /* Styling för planeter i planetraden */
 .planetRow {
-    box-shadow: 0 0 2vh #000000 inset; /* Inset skugga för att se rundare ut */
+    box-shadow: 0 0 2svh #000000 inset; /* Inset skugga för att se rundare ut */
     cursor: pointer; /* Pointer för att visa att de är klickbara */
+}
+.planetRow:hover {
+    box-shadow: 0 0 1svh rgb(0, 174, 255);
 }
 /* Styling för Merkurius i solsystemet och planetraden */
 .mercury, .mercuryRow {
     background-color: #888888;
-    width: 5vh;
-    height: 5vh;
-    max-height: 5vw;
-    max-width: 5vw;
+    width: 5svh;
+    height: 5svh;
+    max-height: 5svw;
+    max-width: 5svw;
 }
 /* Styling för Merkurius i solsystemet */
 .mercury {
@@ -142,10 +146,10 @@ input:focus {
 /* Styling för Venus i solsystemet och planetraden */
 .venus, .venusRow {
     background-color: #e3c97e;
-    width: 7vh;
-    height: 7vh;
-    max-height: 7vw;
-    max-width: 7vw;
+    width: 7svh;
+    height: 7svh;
+    max-height: 7svw;
+    max-width: 7svw;
 }
 /* Styling för Venus i solsystemet */
 .venus {
@@ -158,10 +162,10 @@ input:focus {
 .earth, .earthRow {
     background-color: #2a5d9f; /* Om gradients inte är supported i webbläsaren*/
     background: radial-gradient(circle at 30% 30%, #2a5d9f, #4caf50);
-    width: 7vh;
-    height: 7vh;
-    max-height: 7vw;
-    max-width: 7vw;
+    width: 7svh;
+    height: 7svh;
+    max-height: 7svw;
+    max-width: 7svw;
 }
 /* Styling för Jorden i solsystemet */
 .earth {
@@ -172,10 +176,10 @@ input:focus {
 /* Styling för Mars i solsystemet och planetraden */
 .mars, .marsRow {
     background-color: #c1440e;
-    width: 5vh;
-    height: 5vh;
-    max-height: 5vw;
-    max-width: 5vw;
+    width: 5svh;
+    height: 5svh;
+    max-height: 5svw;
+    max-width: 5svw;
 }
 /* Styling för Mars i solsystemet */
 .mars {
@@ -188,10 +192,10 @@ input:focus {
     background-color: #d9a066; /* Om gradients inte är supported i webbläsaren*/
     background: linear-gradient(135deg, #d9a066 25%, #f4f1ed 25%, #f4f1ed 50%, #d9a066 50%, #d9a066 75%, #b74f2e 75%); /* Försök att få Jupiter att se ut som Jupiter */
     background-size: 100% 20%;
-    width: 12vh;
-    height: 12vh;
-    max-height: 12vw;
-    max-width: 12vw;
+    width: 12svh;
+    height: 12svh;
+    max-height: 12svw;
+    max-width: 12svw;
 }
 /* Styling för Jupiter i solsystemet */
 .jupiter {
@@ -210,10 +214,10 @@ input:focus {
 /* Styling för Saturnus i solsystemet och planetraden */
 .saturn, .saturnRow {
     background-color: #ecd9a1;
-    width: 11vh;
-    height: 11vh;
-    max-height: 11vw;
-    max-width: 11vw;
+    width: 11svh;
+    height: 11svh;
+    max-height: 11svw;
+    max-width: 11svw;
 }
 /* Styling för Saturnus i solsystemet */
 .saturn {
@@ -227,7 +231,7 @@ input:focus {
     top: 50%;
     left: 50%;
     width: 140%;
-    height: 25%;
+    height: 10%;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     transform: translate(-50%, -50%) rotate(-15deg); /* Centrerar och snedställer */
@@ -236,10 +240,10 @@ input:focus {
 /* Styling för Uranus i solsystemet och planetraden */
 .uranus, .uranusRow {
     background-color: #7fdbda;
-    width: 9vh;
-    height: 9vh;
-    max-height: 9vw;
-    max-width: 9vw;
+    width: 9svh;
+    height: 9svh;
+    max-height: 9svw;
+    max-width: 9svw;
 }
 /* Styling för Uranus i solsystemet */
 .uranus {
@@ -250,10 +254,10 @@ input:focus {
 /* Styling för Neptunus i solsystemet och planetraden */
 .neptune, .neptuneRow {
     background-color: #2443a6;
-    width: 9vh;
-    height: 9vh;
-    max-height: 9vw;
-    max-width: 9vw;
+    width: 9svh;
+    height: 9svh;
+    max-height: 9svw;
+    max-width: 9svw;
 }
 /* Styling för Neptunus i solsystemet */
 .neptune {
@@ -264,9 +268,9 @@ input:focus {
 /* Styling för stjärnor i bakgrunden */
 .star {
     position: absolute; /* Absolute för att de ska kunna placeras ut randomly med JS-funktion */
-    background-color: rgba(255, 255, 255, 0.3);
-    width: .1px;
-    height: .1px;
+    background-color: rgb(255, 255, 255);
+    width: 1px;
+    height: 1px;
     border-radius: 50%;
     z-index: -1; /* Lägger "bakom" allt annat */
 }
@@ -276,11 +280,12 @@ input:focus {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100svw;
+    height: 100svh;
     background-color: rgba(0, 0, 0, 0.8); /* Inforutan täcker inte hela skärmen, detta gör att allt utanför inforutan "bleknar" */
     z-index: 1000; /* Lägger infoBox och dess barn "ovanpå" allt annat */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -294,8 +299,8 @@ input:focus {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    width: 85vw;
-    height: 60vh;
+    width: 85svw;
+    height: 60svh;
     box-shadow: 0 0 10px rgba(0, 174, 255); /* Glow-effekt */
 }
 /* Styling för inforutan */
@@ -305,11 +310,11 @@ input:focus {
     background-color: #000000;
     border-radius: 10px;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     color: rgb(0, 174, 255);
     text-align: center;
     padding: 5%;
-    padding-bottom: 10vh;
+    padding-bottom: 10svh;
 }
 .closeButtonBox {
     display: flex;
@@ -318,7 +323,7 @@ input:focus {
     background-color: #000000;
     position: sticky;
     bottom: 0;
-    min-height: 10vh;
+    min-height: 10svh;
     width: 100%;
 }
 /* Styling för STÄNG-knapp */
@@ -328,8 +333,8 @@ input:focus {
     border-radius: 1em;
     background-color: rgb(0, 174, 255, 0.7);
     font-size: 1.5rem;
-    width: 25vw;
-    height: 6vh;
+    width: 25svw;
+    height: 6svh;
     cursor: pointer;
 }
 /* Styling för felmeddelande vid felaktig input i inputfätet */
@@ -338,8 +343,8 @@ input:focus {
     color: red;
     line-height: 2;
     text-align: center;
-    margin-bottom: 5vmin;
-    width: 80vmin;
+    margin-bottom: 5svmin;
+    width: 80svmin;
     border: 1px solid red;
 }
 /* Styling för STÄNG-knappen vid felmeddelande */
@@ -348,15 +353,20 @@ input:focus {
     background-color: red;
     border: 1px solid white;
     border-radius: 50%;
-    width: 10vmin;
-    height: 10vmin;
+    width: 10svmin;
+    height: 10svmin;
     cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+    .infoHeader, .infoDescBox, .infoCircBox, .infoDistBox, .infoTempBox, .infoOrbitBox {
+        margin-bottom: 1svh;
+    }
 }
 /* Styling för skärmar bredare än 992px */
 @media only screen and (min-width: 992px) {
     .infoBoxContentBox {
-        height: 90vh;
-        width: 90vw;
+        height: 90svh;
+        width: 90svw;
         justify-content: space-between;
     }
     /* Ändrar layout för inforutan vid bredare skärm */
@@ -368,7 +378,7 @@ input:focus {
         padding: 1%;
     }
     .closeButton {
-        width: 15vw;
+        width: 15svw;
     }
     /* infoHeader (behållare för namn på svenska och latin), infoDescBox (behållare för beskrivning) 
     och infoMoonsBox (behållare för månar) tar upp en hel row */
@@ -394,65 +404,65 @@ input:focus {
 /* Keyframes för animation av omloppsbanor runt solen för planeterna i solsystemet */
 @keyframes orbit-mercury {
     0% {
-        transform: translate(-50%, -50%) rotate(45deg) translateX(5vmin) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(45deg) translateX(5svmin) rotate(-45deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(405deg) translateX(5vmin) rotate(-405deg);
+        transform: translate(-50%, -50%) rotate(405deg) translateX(5svmin) rotate(-405deg);
     }
 }
 @keyframes orbit-venus {
     0% {
-        transform: translate(-50%, -50%) rotate(12deg) translateX(7vmin) rotate(-12deg);
+        transform: translate(-50%, -50%) rotate(12deg) translateX(7svmin) rotate(-12deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(372deg) translateX(7vmin) rotate(-372deg);
+        transform: translate(-50%, -50%) rotate(372deg) translateX(7svmin) rotate(-372deg);
     }
 }
 @keyframes orbit-earth {
     0% {
-        transform: translate(-50%, -50%) rotate(112deg) translateX(9vmin) rotate(-112deg);
+        transform: translate(-50%, -50%) rotate(112deg) translateX(9svmin) rotate(-112deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(472deg) translateX(9vmin) rotate(-472deg);
+        transform: translate(-50%, -50%) rotate(472deg) translateX(9svmin) rotate(-472deg);
     }
 }
 @keyframes orbit-mars {
     0% {
-        transform: translate(-50%, -50%) rotate(175deg) translateX(11vmin) rotate(-175deg);
+        transform: translate(-50%, -50%) rotate(175deg) translateX(11svmin) rotate(-175deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(535deg) translateX(11vmin) rotate(-535deg);
+        transform: translate(-50%, -50%) rotate(535deg) translateX(11svmin) rotate(-535deg);
     }
 }
 @keyframes orbit-jupiter {
     0% {
-        transform: translate(-50%, -50%) rotate(220deg) translateX(14vmin) rotate(-220deg);
+        transform: translate(-50%, -50%) rotate(220deg) translateX(14svmin) rotate(-220deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(580deg) translateX(14vmin) rotate(-580deg);
+        transform: translate(-50%, -50%) rotate(580deg) translateX(14svmin) rotate(-580deg);
     }
 }
 @keyframes orbit-saturn {
     0% {
-        transform: translate(-50%, -50%) rotate(300deg) translateX(17vmin) rotate(-300deg);
+        transform: translate(-50%, -50%) rotate(300deg) translateX(17svmin) rotate(-300deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(660deg) translateX(17vmin) rotate(-660deg);
+        transform: translate(-50%, -50%) rotate(660deg) translateX(17svmin) rotate(-660deg);
     }
 }
 @keyframes orbit-uranus {
     0% {
-        transform: translate(-50%, -50%) rotate(90deg) translateX(20vmin) rotate(-90deg);
+        transform: translate(-50%, -50%) rotate(90deg) translateX(20svmin) rotate(-90deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(450deg) translateX(20vmin) rotate(-450deg);
+        transform: translate(-50%, -50%) rotate(450deg) translateX(20svmin) rotate(-450deg);
     }
 }
 @keyframes orbit-neptune {
     0% {
-        transform: translate(-50%, -50%) rotate(200deg) translateX(23vmin) rotate(-200deg);
+        transform: translate(-50%, -50%) rotate(200deg) translateX(23svmin) rotate(-200deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(560deg) translateX(23vmin) rotate(-560deg);
+        transform: translate(-50%, -50%) rotate(560deg) translateX(23svmin) rotate(-560deg);
     }
 }

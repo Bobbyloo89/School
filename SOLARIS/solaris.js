@@ -53,12 +53,12 @@ async function fetchBodies(apiKey) {
 // Function som skapar stjärnor i bakgrunden
 function createStars() {
     const container = document.querySelector('body');
-    for (let i = 0; i < 1000; i++) { // Ändra för fler eller färre stjärnor
+    for (let i = 0; i < 500; i++) { // Ändra för fler eller färre stjärnor
         const star = document.createElement('div'); // Skapar ett element
         star.className = 'star'; // Ger elementet en class (för att kunna styla med CSS)
         // star har position: absolute så vi kan tilldela den värden för top: och left: för att sprida ut dem över bakgrunden
-        star.style.top = Math.random() * 100 + '%'; // Random vertikal position
-        star.style.left = Math.random() * 100 + '%'; // Random horisontell position
+        star.style.top = (Math.random() * 98 + 1) + '%'; // Random vertikal position större än 1 och mindre än 99 för att undvika overflow
+        star.style.left = (Math.random() * 98 + 1) + '%'; // Random horisontell position större än 1 och mindre än 99 för att undvika overflow
         container.appendChild(star); // Lägg till stjärnan i bodyn
     }
 }
@@ -109,6 +109,9 @@ fetchApiKey().then(apiKey => {
                     // Om sökningen matchar namnet på en planet
                     if (planet) {
                         infoBox.innerHTML = ''; // Rensar innehållet i infoBox så vi kan fylla den med relevant data
+
+                        const body = document.body; // Tilldelar body till variabel
+                        body.style.overflow = 'hidden'; // Hindrar body från att vara scrollbar när inforuta är öppen
 
                         // Skapar en container att visa vår planetinfo i
                         const infoBoxContent = document.createElement('div');
@@ -167,7 +170,7 @@ fetchApiKey().then(apiKey => {
                         const infoOrbitLabel = document.createElement('h3'); // Nytt element, omloppsperiodrubrik
                         infoOrbitLabel.textContent = 'OMLOPPSPERIOD';
                         const infoOrbit = document.createElement('p'); // Nytt element, värde för omloppsperiod
-                        infoOrbit.textContent = `${planet.orbitalPeriod || 'Data not available'} dygn`; // Lägger in data från vår sökning
+                        infoOrbit.textContent = `${planet.orbitalPeriod || 'Data not available'} jorddygn`; // Lägger in data från vår sökning
                         infoOrbitBox.appendChild(infoOrbitLabel); // Lägger till omloppsperiodrubrik till container för omloppsperiod
                         infoOrbitBox.appendChild(infoOrbit); // Lägger till omloppsperiodvärde till container för omloppsperiod
                         infoBoxContent.appendChild(infoOrbitBox); // Lägger till container för omloppsperiod till infoBoxContent
@@ -196,6 +199,8 @@ fetchApiKey().then(apiKey => {
                         closeButton.addEventListener('click', () => { // Lägger till event listener för klick på knappen
                             infoBox.innerHTML = ''; // Tar bort data i infoBox när knappen klickas
                             infoBox.style.display = 'none'; // Stänger (döljer) infoBox när knappen klickas
+
+                            body.style.overflow = 'auto'; // Gör body scrollbar igen
                         });
                         closeButtonBox.appendChild(closeButton); // Lägger till "Stäng"-knapp till infoBoxContent
 
